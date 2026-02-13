@@ -37,7 +37,7 @@ pip install selenium
 3. **Driver:** Make sure you have the correct `chromedriver` installed for your version of Chrome (or use `webdriver-manager`).
 4. **Run a script:**
 ```bash
-python reaction_time.py
+python reaction_speed.py
 
 ```
 
