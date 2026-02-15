@@ -40,11 +40,8 @@ def solve_level():
     wait = WebDriverWait(browser, 10)
     
     try:
-        # 1. Wait for the parent span to appear
         parent_span = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "css-4rar09")))
         
-        # 2. Get the actual level number from the SECOND child span
-        # This is more reliable than splitting strings
         level_text = ""
         for _ in range(20):
             try:
@@ -90,7 +87,6 @@ current_level = 0
 while True:
     wait = WebDriverWait(browser, 10)
     try:
-        # This waits until the level number is strictly greater than the one we just finished
         wait.until(lambda d: int(d.find_element(By.CLASS_NAME, "css-4rar09").find_elements(By.TAG_NAME, "span")[1].text) > current_level)
     except Exception as e:
         print("Game over or timed out waiting for next level.")
