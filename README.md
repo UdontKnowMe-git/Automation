@@ -22,7 +22,7 @@ I'm aiming for "efficient-ish" code—it's not production-grade, it's "it works 
 
 1. **Clone the repo:**
 ```bash
-git clone https://github.com/yourusername/human-benchmark-bot.git
+git clone https://github.com/UdontKnowMe-git/human-benchmark-bot.git
 
 ```
 
